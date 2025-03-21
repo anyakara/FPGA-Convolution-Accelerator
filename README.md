@@ -1,4 +1,4 @@
-# FPGA-Convolution-Accelerator
+# FPGA Convolution Accelerator
 This project implements a hardware accelerator for convolution operations used primarily in computer vision tasks, such as image processing, using FPGA. The accelerator is designed to be highly parallel, optimizing the computation of convolution operations on 3×3 kernels over image patches using multiple MAC (Multiply-Accumulate) units. It handles fixed-point arithmetic, sliding window generation, kernel selection, and activation functions (like ReLU) for efficient image feature extraction. New features are being added in a continuing basis. The implementation is the next step from my MIPS Pipelined Processor Project.
 
 ## Table of Contents
@@ -18,6 +18,8 @@ This project implements a hardware accelerator for convolution operations used p
 This FPGA-based Convolution Accelerator is designed to optimize the computation of convolutions for computer vision tasks. Convolution operations are at the heart of many image processing algorithms, such as edge detection, blur, and feature extraction in Convolutional Neural Networks (CNNs).
 
 The design is broken down into several key components that work in tandem to accelerate the process:
+
+![High-Level Overview](img/high_level.png)
 
 1. Memory Loader: Efficiently loads pixel data from memory (e.g., DDR or BRAM).
 2. Sliding Window Generator: Extracts 3x3 pixel windows from the input image.
